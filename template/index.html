@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <title>ASD</title>
+</head>
+<body>
+    <form action = "/index" method="POST">
+        <h2>Welcome to Autism Spectrum Disorder evaluater</h2>
+        <h3>Fill the details below</h3>
+
+        <div class="container">
+        
+            <label for="cname">Patient Name</label>
+            <input type="text" id="cname" name="cname" placeholder="Enter your Patient name ..">
+        
+            <label for="age">age</label>
+            <input type="text" id="age" name="age" placeholder="Enter your Patient age..">
+
+            <label for="sex">Gender</label>
+            <select id="sex" name="sex" required>
+                <option value="">None</option>
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+            </select>
+        
+            <label for="bwj">Born with jaundice</label>
+            <select id="bwj" name="bwj" required>
+                <option value="">None</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="fads">Family member wiht ASD history</label>
+            <select id="fads" name="fads" required>
+                <option value="">None</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="testingperson">Who is completing the test</label>
+            <input type="text" id="testingperson" name="testingperson" placeholder="Enter testing person name..">
+        
+            <label for="sreason">Why are you taking the screening</label>
+            <textarea id="sreason" name="sreason" placeholder="Write something.." style="height:100px"></textarea>
+
+            <label for="aq1">Does your child look at you when you call his/her name?</label>
+            <select id="aq1" name="aq1" required>
+                <option value="">None</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="aq2">Is it easy for you to make eye contact with your child?</label>
+            <select id="aq2" name="aq2" required>
+                <option value="">None</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="aq3">Does your child point to indicate that he/she want something?</label>
+            <select id="aq3" name="aq3" required>
+                <option value="">None</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="aq4">Does your child point ot share an interest with you?</label>
+            <select id="aq4" name="aq4" required>
+                <option value="">None</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="aq5">Does your child pretend?</label>
+            <select id="aq5" name="aq5" required>
+                <option value="">None</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="aq6">Does your child follow where you're looking?</label>
+            <select id="aq6" name="aq6" required>
+                <option value="">None</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="aq7">If you or someone else in the family is visibly upset, does your child show signs of wanting to comfort them?</label>
+            <select id="aq7" name="aq7" required>
+                <option value="">None</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="aq8">Would you describe your child's first words?</label>
+            <select id="aq8" name="aq8" required>
+                <option value="">None</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="aq9">Does your child use simple gestures??</label>
+            <select id="aq9" name="aq9" required>
+                <option value="">None</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="aq10">Does your child stare at nothing with no apparent purpose?</label>
+            <select id="aq10" name="aq10" required>
+                <option value="">None</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        
+            <input type="submit" value="Submit">
+        
+        </div>
+    </form>  
+</body>
+</html>
